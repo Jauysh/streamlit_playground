@@ -1,4 +1,4 @@
-st.write("# Basics")
+"# Basics"
 
 """
 # My first app
