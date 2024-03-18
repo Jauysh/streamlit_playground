@@ -16,19 +16,19 @@ df = pd.DataFrame({
 
 
 
-st.write("Here's our first attempt at using data to create a table:")
+st.write("1. Here's our first attempt at using data to create a table:")
 st.write(df)
 
 
 
-st.write("Numpy usage:")
+st.write("2. Numpy usage:")
 dataframe = np.random.randn(10, 20)
 st.dataframe(dataframe)
 
 
 
 
-st.write("Numpy highlights sths:")
+st.write("3. Numpy highlights sths:")
 dataframe = pd.DataFrame(
     np.random.randn(10, 20),
     columns=('col %d' % i for i in range(20)))
@@ -36,14 +36,14 @@ dataframe = pd.DataFrame(
 st.dataframe(dataframe.style.highlight_max(axis=0))
 
 
-st.write("Table usage:")
+st.write("4. Table usage:")
 dataframe = pd.DataFrame(
     np.random.randn(10, 20),
     columns=('col %d' % i for i in range(20)))
 st.table(dataframe)
 
 
-st.write("Chart usage:")
+st.write("5. Chart usage:")
 chart_data = pd.DataFrame(
      np.random.randn(20, 3),
      columns=['a', 'b', 'c'])
@@ -51,7 +51,7 @@ chart_data = pd.DataFrame(
 st.line_chart(chart_data)
 
 
-st.write("Map usage:")
+st.write("6. Map usage:")
 map_data = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
     columns=['lat', 'lon'])
@@ -59,18 +59,18 @@ map_data = pd.DataFrame(
 st.map(map_data)
 
 
-st.write("Slider usage:")
+st.write("7. Slider usage:")
 x = st.slider('x')  # 👈 this is a widget
 st.write(x, 'squared is', x * x)
 
 
-st.write("User Input usage:")
+st.write("8. User Input usage:")
 st.text_input("Your name", key="name")
 # You can access the value at any point with:
 st.session_state.name
 
 
-st.write("Show / Hide df:")
+st.write("9. Show / Hide df:")
 if st.checkbox('Show dataframe'):
     chart_data = pd.DataFrame(
        np.random.randn(20, 3),
@@ -79,7 +79,7 @@ if st.checkbox('Show dataframe'):
     chart_data
 
 
-st.write("Selectbox, options:")
+st.write("10. Selectbox, options:")
 option = st.selectbox(
     'Which number do you like best?',
      df['first column'])
@@ -87,7 +87,7 @@ option = st.selectbox(
 'You selected: ', option
 
 
-st.write("Layouts, sidebar & slider. Left slidebar")
+st.write("11. Layouts, sidebar & slider. Left slidebar")
 # Add a selectbox to the sidebar:
 add_selectbox = st.sidebar.selectbox(
     'How would you like to be contacted? selectbox',
@@ -102,7 +102,7 @@ add_slider = st.sidebar.slider(
 
 
 
-st.write("Side-by-side content")
+st.write("12. Side-by-side content")
 left_column, right_column = st.columns(2)
 # You can use a column just like st.sidebar:
 left_column.button('Press me!')
