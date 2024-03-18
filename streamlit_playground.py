@@ -4,8 +4,6 @@
 This is some _markdown_.
 '''
 
-st.write('# Basics')
-
 
 import streamlit as st
 import pandas as pd
