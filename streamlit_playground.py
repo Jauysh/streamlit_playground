@@ -102,7 +102,7 @@ add_slider = st.sidebar.slider(
 
 
 
-st.write("Layouts, sidebar & slider. Left slidebar")
+st.write("Side-by-side content")
 left_column, right_column = st.columns(2)
 # You can use a column just like st.sidebar:
 left_column.button('Press me!')
