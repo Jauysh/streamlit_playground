@@ -91,12 +91,12 @@ st.write("Layouts, sidebar & slider:")
 
 # Add a selectbox to the sidebar:
 add_selectbox = st.sidebar.selectbox(
-    'How would you like to be contacted?',
+    'How would you like to be contacted? selectbox',
     ('Email', 'Home phone', 'Mobile phone')
 )
 
 # Add a slider to the sidebar:
 add_slider = st.sidebar.slider(
-    'Select a range of values',
+    'Select a range of values.   sidebar',
     0.0, 100.0, (25.0, 75.0)
 )
