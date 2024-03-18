@@ -87,7 +87,7 @@ option = st.selectbox(
 'You selected: ', option
 
 
-st.write("Layouts, sidebar & slider:")
+st.write("Layouts, sidebar & slider. Left slidebar")
 
 # Add a selectbox to the sidebar:
 add_selectbox = st.sidebar.selectbox(
