@@ -57,3 +57,8 @@ map_data = pd.DataFrame(
     columns=['lat', 'lon'])
 
 st.map(map_data)
+
+
+st.write("Slider usage:")
+x = st.slider('x')  # 👈 this is a widget
+st.write(x, 'squared is', x * x)
