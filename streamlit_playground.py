@@ -77,3 +77,11 @@ if st.checkbox('Show dataframe'):
        columns=['a', 'b', 'c'])
 
     chart_data
+
+
+st.write("Selectbox, options:")
+option = st.selectbox(
+    'Which number do you like best?',
+     df['first column'])
+
+'You selected: ', option
