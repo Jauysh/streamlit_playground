@@ -1,10 +1,9 @@
-st.write("# Basics 👋")
-
 import streamlit as st
 import pandas as pd
 import numpy as np
 import time
 
+st.write("# Basics 👋")
 
 df = pd.DataFrame({
   'first column': [1, 2, 3, 4],
