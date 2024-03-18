@@ -1,5 +1,3 @@
-st.write("2. Numpy usage:")
-
 """
 # My first app
 Here's our first attempt at using data to create a table:
@@ -130,6 +128,6 @@ for i in range(100):
   # Update the progress bar with each iteration.
   latest_iteration.text(f'Iteration {i+1}')
   bar.progress(i + 1)
-  time.sleep(0.06)
+  time.sleep(0.07)
 
 '...and now we\'re done!'
